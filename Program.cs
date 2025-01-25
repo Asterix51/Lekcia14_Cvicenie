@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            TaskManager taskManager = new TaskManager();
+            taskManager.LoadTasks();
+
+            while (true)
+            {
+                taskManager.DisplayInteractiveMenu();
+            }
         }
     }
 }
