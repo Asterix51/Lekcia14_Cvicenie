@@ -2,7 +2,8 @@
 {
     public class Task
     {
-        public int Id { get; set; }
+        public Guid UniqueId { get; set; } // GUID ako hlavný identifikátor
+        public int Id { get; set; }        // Číselné ID pre používateľské rozhranie
         public string Name { get; set; }
         public DateTime DueDate { get; set; }
         public TaskPriority Priority { get; set; }
